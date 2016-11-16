@@ -1,14 +1,12 @@
 # Stale LRU Cache
 
-> A promise-based Stale LRU Cache with support for clusters.
+> A promise-based Stale LRU Cache with support for cluster.
 
 ## Features
 
 - A promise-based API.
 - Support for cluster.
-- Hides refresh latency and shields against errors using background revalidation.
-- Allows HTTP resources to define their own caching policy using Cache-Control headers.
-- Optimises hit-ratio by discarding least recently used items first.
+- Wrapper for [stale-lru-cache](github.com/cyberthom/stale-lru-cache) module.
 
 ## Installation
 
