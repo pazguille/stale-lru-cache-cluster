@@ -6,7 +6,7 @@
 
 - A promise-based API.
 - Support for cluster.
-- Wrapper for [stale-lru-cache](github.com/cyberthom/stale-lru-cache) module.
+- Wrapper for [stale-lru-cache](https://github.com/cyberthom/stale-lru-cache) module.
 
 ## Installation
 
