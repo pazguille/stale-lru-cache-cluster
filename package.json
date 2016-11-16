@@ -1,0 +1,34 @@
+{
+  "name": "stale-lru-cache-cluster",
+  "repository": "git://github.com/pazguille/stale-lru-cache-cluster.git",
+  "description": "A promise-based Stale LRU Cache with support for clusters.",
+  "version": "1.0.0",
+  "author": "Guille Paz <guille87paz@gmail.com>",
+  "scripts": {
+    "lint": "NODE_ENV=test eslint index.js src/*.js",
+    "test": "NODE_ENV=test _mocha ./test/*.spec.js",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- ./test/*.spec.js"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.8.1",
+    "eslint-config-airbnb-base": "9.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.1.0"
+  },
+  "dependencies": {
+    "node-uuid": "1.4.1",
+    "stale-lru-cache": "5.0.2"
+  },
+  "main": "index.js",
+  "keywords": [
+    "stale-lru-cache",
+    "lru-cache",
+    "lru",
+    "cache",
+    "cluster",
+    "cache"
+  ],
+  "license": "MIT"
+}
