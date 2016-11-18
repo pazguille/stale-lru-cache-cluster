@@ -20,7 +20,7 @@ if (cluster.isMaster) {
 
       let lru = caches[msg.namespace];
 
-      function sendResponse(data){
+      function sendResponse(data) {
         data.source = source;
         data.namespace = lru.namespace;
         data.id = msg.id;
@@ -28,15 +28,15 @@ if (cluster.isMaster) {
       }
 
       const switcheroo = {
-        constructor: function(options) {
+        constructor: () => {
           lru = caches[msg.namespace] = new LRUCachePromised();
           lru.namespace = msg.namespace;
           sendResponse({ cmd: 'constructor' });
         },
       };
 
-      methods.forEach(method => {
-        switcheroo[method] = function(args) {
+      methods.forEach((method) => {
+        switcheroo[method] = (args) => {
           lru[method](args[0], args[1], args[2])
             .then(response => sendResponse({ response, cmd: method }));
         };
