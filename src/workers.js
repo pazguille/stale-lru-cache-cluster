@@ -3,7 +3,7 @@
  */
 const cluster = require('cluster');
 const LRUCachePromised = require('./stale-lru-cache-promised');
-const uuid = require('node-uuid');
+const uuid = require('uuid');
 
 const source = 'stale-lru-cache-cluster';
 const pending = {};
