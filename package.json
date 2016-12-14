@@ -2,7 +2,7 @@
   "name": "stale-lru-cache-cluster",
   "repository": "git://github.com/pazguille/stale-lru-cache-cluster.git",
   "description": "A promise-based Stale LRU Cache with support for clusters.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Guille Paz <guille87paz@gmail.com>",
   "scripts": {
     "lint": "NODE_ENV=test eslint index.js src/*.js",
