@@ -11,15 +11,15 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "eslint": "3.8.1",
-    "eslint-config-airbnb-base": "9.0.0",
+    "eslint": "3.12.1",
+    "eslint-config-airbnb-base": "11.0.0",
     "eslint-plugin-import": "2.2.0",
     "istanbul": "0.4.5",
-    "mocha": "3.1.0"
+    "mocha": "3.2.0"
   },
   "dependencies": {
-    "stale-lru-cache": "5.0.2",
-    "uuid": "3.0.0"
+    "stale-lru-cache": "5.1.0",
+    "uuid": "3.0.1"
   },
   "main": "index.js",
   "keywords": [
