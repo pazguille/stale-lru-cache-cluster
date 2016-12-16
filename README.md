@@ -174,6 +174,7 @@ cache.set('key', 'value', { maxAge: 600, staleWhileRevalidate: 86400 }); // true
 cache.set('key', 'value', { maxAge: 0 }); // false
 
 cache.set('key', 'value', 'max-age=600, stale-while-revalidate=86400'); // true
+cache.set('key', 'value', 'max-age=0'); // false
 cache.set('key', 'value', 'no-cache, no-store, must-revalidate'); // false
 ```
 
@@ -181,6 +182,7 @@ cache.set('key', 'value', 'no-cache, no-store, must-revalidate'); // false
 
 * `max-age=600, must-revalidate` - Will be cached for 10 minutes and removed afterwards
 * `max-age=600, stale-while-revalidate=86400` - Will be cached for 10 minutes and then refreshed in the background if the item is accessed again within a time window of 1 day
+* `max-age=0` - Will not be cached
 * `no-cache, no-store, must-revalidate` - Will not be cached
 * `private` - Will not be cached
 * `public` - Will be cached using default `maxAge` and `staleWhileRevalidate` options
